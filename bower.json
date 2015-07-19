@@ -1,0 +1,20 @@
+{
+  "name": "stirlingwaitecom",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/stirlingw/stirlingwaitecom",
+  "authors": [
+    "stirlingw"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest"
+  }
+}
