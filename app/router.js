@@ -18,5 +18,15 @@ module.config(function($stateProvider, $urlRouterProvider) {
             url:'/about',
             templateUrl:'/app/states/about/AboutView.html',
             controller:'AboutCtrl'
+        })
+        .state('/blog',{
+            url:'/blog',
+            templateUrl:'/app/states/blog/BlogView.html',
+            controller:'BlogCtrl'
+        })
+        .state('/contact',{
+            url:'/contact',
+            templateUrl:'/app/states/contact/ContactView.html',
+            controller:'ContactCtrl'
         });
 });
