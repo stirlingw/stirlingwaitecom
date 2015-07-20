@@ -59,7 +59,7 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.json', '.less'],
         // Tell webpack to look for required files in bower and node
-        modulesDirectories: ['bower_components','node_modules'],
+        modulesDirectories: ['node_modules'],
         alias: {
             module: 'module.js'
         }
