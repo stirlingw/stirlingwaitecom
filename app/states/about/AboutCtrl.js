@@ -1,4 +1,4 @@
-let module = require('../../module');
+var module = require('../../module');
 require("./AboutView.less");
 
 module.controller('AboutCtrl', ['$scope',

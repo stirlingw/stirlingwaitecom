@@ -1,5 +1,5 @@
-let angular = require('angular');
-let module = require('./app/module');
+var angular = require('angular');
+var module = require('./app/module');
 require('./app/router.js');
 
 module.controller('IndexCtrl', ['$scope', function($scope) {

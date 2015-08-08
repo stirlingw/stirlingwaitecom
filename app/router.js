@@ -1,8 +1,11 @@
-let angular = require('angular');
-let module = require('./module');
+var angular = require('angular');
+var module = require('./module');
 
 require('./states/home/HomeCtrl.js');
 require('./states/about/AboutCtrl.js');
+require('./states/blog/BlogCtrl.js');
+require('./states/blogs/BlogsCtrl.js');
+require('./states/contact/ContactCtrl.js');
 
 module.config(function($stateProvider, $urlRouterProvider) {
     //$locationProvider.html5Mode(true);
@@ -20,9 +23,14 @@ module.config(function($stateProvider, $urlRouterProvider) {
             controller:'AboutCtrl'
         })
         .state('/blog',{
-            url:'/blog',
+            url:'/blog/:name',
             templateUrl:'/app/states/blog/BlogView.html',
-            controller:'BlogCtrl'
+            controller:'BlogController'
+        })
+        .state('/blogs',{
+            url:'/blogs',
+            templateUrl:'/app/states/blogs/BlogsView.html',
+            controller:'BlogsController'
         })
         .state('/contact',{
             url:'/contact',

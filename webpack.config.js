@@ -19,7 +19,9 @@ module.exports = {
     module: {
         loaders: [
             { test: /[\/]angular\.js$/, loader: "exports?angular" },
+            //{test: /\.js$/, exclude: /node_modules/, loader: "transform?brfs"},
             { test: /\.js$/, exclude: /node_modules/, loader: "nginjector-loader!babel-loader" },
+            { test: /\.md$/,    loader: "file-loader" },
             { test: /\.html$/, exclude: /node_modules/, loader: "html-loader" },
             { test: /\.gif/, exclude: /node_modules/, loader: "file-loader!url-loader?limit=10000&minetype=image/gif" },
             { test: /\.jpg/, exclude: /node_modules/, loader: "file-loader!url-loader?limit=10000&minetype=image/jpg" },
