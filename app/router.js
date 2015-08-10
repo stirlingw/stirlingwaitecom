@@ -1,12 +1,6 @@
 var angular = require('angular');
 var module = require('./module');
 
-require('./states/home/HomeCtrl.js');
-require('./states/about/AboutCtrl.js');
-require('./states/blog/BlogCtrl.js');
-require('./states/blogs/BlogsCtrl.js');
-require('./states/contact/ContactCtrl.js');
-
 module.config(function($stateProvider, $urlRouterProvider) {
     //$locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise("/home");

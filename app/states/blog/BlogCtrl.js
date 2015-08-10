@@ -1,9 +1,8 @@
 var module = require('../../module');
 require("./BlogView.less");
 var marked = require('marked');
-require('../../shared/services/superModel.js');
+//require('../../shared/services/superModel.js');
 
-//let Path = require('path');
 
 module.controller('BlogController', ['$scope', '$sce', '$state', 'SuperModelService',
     function($scope, $sce, $state, SuperModelService) {
