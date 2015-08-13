@@ -3,12 +3,12 @@ var config    = require('./webpack.config.js');
 var webpack    = require('webpack');
 
 var devConfig  = Object.create(config);
-devConfig.watch = true
+devConfig.watch = true;
 
 var compiler = webpack(devConfig);
 
 webserver = new server( compiler, { } );
 
-webserver.listen(3002, '0.0.0.0', function () { });
+webserver.listen(9000, '0.0.0.0', function () { });
 
-console.log('Running on port 3002');
+console.log('Running on port 9000');

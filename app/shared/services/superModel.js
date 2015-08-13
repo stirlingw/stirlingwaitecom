@@ -12,7 +12,8 @@ module.service('SuperModelService', ['$http','$q',
                 title: 'It was a dark',
                 subTitle: 'and stormy knight!',
                 name: "stormy-knight",
-                file: 'stormy-knight.md'
+                file: 'stormy-knight.md',
+                img: 'stormy-knight.jpg'
             },
             {
                 id: 1,
